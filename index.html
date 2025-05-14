@@ -3,43 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>contoh</title>
 </head>
-
+ <style>
+     body {
+        background-color: #87CEEB; /* Warna langit */
+        background-image: url('painting.avif'); /* Perbaiki sintaks untuk memasukkan gambar */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom:#87CEEB;
+        height: 100vh;
+    }
+    .rumah {
+       
+        height: 500px;
+        background-color: aquamarine;
+        border: 10px solid black;
+        border-bottom: 10px;
+        margin-top: 20px;
+        width: 350px;
+        position: relative;
+        flex: 2;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     
+    }
+      .pohon {
+        height: 600px;
+        background-color:#ffffff;
+        margin-top: 60px;
+        width: 60px;
+        position: absolute;
+        left: 10%;
+        flex: 3;
+        border-radius: 50%;
+    }
+    .daun, .batang { /* Tambahkan titik (.) sebelum batang */
+        background-color:antiquewhite;
+        display:none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        flex: 1;
+    }
+     .container-pohon {
+        background-color:azure;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+    }
+    .container-pohon:nth-child(1) {
+        background-color: #228B22; /* Warna daun */
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        top: -100px;
+    }
+</style>
 <body>
-    <h1 align="center">Hello World</h1>
-    <hr size="2px" color="black" width="100%">
-    <nav align="center">
-        <a href="profil.html">profil</a>
-        <a href="about.html">about</a>
-        <a href="login.html">login</a>
-    </nav>
-    <center>
-        <img src="http://pbs.twimg.com/media/C2fsMK-VEAEjtsD.jpg" width="230px"/>
-    </center>
-    <h3> Berita Tentang Doraemon</h3>
-    </p>
-        Lorem ipsum dolor sit amet,consectur adipiscing elit.sed do eiusmod tempor incididuntvut labore et labore et magna also
-    </p>
+    <h1 align="center">Contoh Rumah dan Pohon</h1>
+    <div class="rumah">
 
-    <h6> daftar belanja</h6>
-    <ol>
-        <li> Sayuran</li>
-        <ul>
-            <li> tomat</li>
-            <li> cabai</li>
-        </ul>
-        <li> daging</li>
-        <ul> 
-            <li> ayam</ui>
-            <li> sapi</li>
-        </ul>
-        <li> buah</li>
-        <ul></ul>
-        
-            <
-
-   </body>
-
-</html>
+    </div>
+    <div class="pohon"> </div>
+        <div class="daun"></div>
+        <div class="batang"></div>
+        <div class="container-pohon"></div>
+        <div class="container-pohon"></div>
+   
+</body>
